@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.fb.spider.module.user.repository.UserRepository">
+
+    <select id="getNameById" parameterType="long" resultType="me.fb.spider.module.user.domain.User">
+        SELECT * FROM kms_user WHERE ID = #{id}
+    </select>
+
+</mapper>
